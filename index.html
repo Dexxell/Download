@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download the Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .download-button {
+            background-color: #007bff; /* Blue color */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        #thank-you-message {
+            display: none; /* Hidden by default */
+            margin-top: 20px;
+        }
+        .tutorial {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Download the Extension</h1>
+    <p>Click the button below to download the extension:</p>
+    <a class="download-button" href="files.zip" download onclick="showThankYouMessage();">Download Extension (ZIP)</a>
+    
+    <div id="thank-you-message">
+        <h2>Thank You!</h2>
+        <p>Your download should start shortly. If it doesn't, <a href="files.zip">click here to download again.</a></p>
+    </div>
+
+    <div class="tutorial">
+        <h2>How to Add the Extension to Chrome</h2>
+        <ol>
+            <li>Download the ZIP file of the extension.</li>
+            <li>Extract the contents of the ZIP file to a folder on your computer.</li>
+            <li>Open Google Chrome and go to <a href="chrome://extensions/" target="_blank">chrome://extensions/</a>.</li>
+            <li>Enable "Developer mode" by toggling the switch in the top right corner.</li>
+            <li>Click on the "Load unpacked" button.</li>
+            <li>Select the folder where you extracted the extension files.</li>
+            <li>The extension should now appear in your list of extensions and be ready to use!</li>
+        </ol>
+    </div>
+
+    <script>
+        function showThankYouMessage() {
+            // Show the thank you message after a short delay
+            setTimeout(function() {
+                document.getElementById('thank-you-message').style.display = 'block';
+            }, 1000); // Show after 1 second
+        }
+    </script>
+</body>
+</html>
+
+
+
+   
+
+
